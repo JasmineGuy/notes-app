@@ -3,6 +3,45 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #7bdaf3;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   font-family: "Poppins", sans-serif;
+}
+.notes {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+.notes .tools {
+  background-color: #9ec862;
+  padding: 0.5 rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.notes .tools button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.notes .main {
+  display: none;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.notes textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  font-size: 1.2rem;
+}
+.notes .hidden {
+  display: none;
 }
