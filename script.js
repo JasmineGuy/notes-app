@@ -1,15 +1,16 @@
 addBtn = document.getElementById('add')
 
-addBtn.addEventListener('click', ()=> {
+addBtn.addEventListener('click', (e)=> {
     addNewNote();
 });
 
 function addNewNote(){
+    console.log('clicked')
     const note = document.createElement('div')
     note.classList.add('note')
 
     note.innerHTML =`
-     <div class="notes">
+     <div class="note">
         <div class="tools">
             <button class="edit"> 
                 <i class="fas fa-edit"></i>
